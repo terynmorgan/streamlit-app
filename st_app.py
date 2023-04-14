@@ -45,7 +45,7 @@ st.set_page_config(page_title="Stories of Sex Workers", layout="wide")
 
 # Read in interview data 
 amber_dict = {}
-amber_dict = read_data("data/Amber_Interview.txt", amber_dict)
+amber_dict = read_data("/Users/terynmorgan/Documents/GitHub/Stories-of-Sex-Workers-App-/data/Amber_interview.txt", amber_dict)
 
 essence_dict = {}
 essence_dict = read_data("data/Essence_Interview.txt", essence_dict)
