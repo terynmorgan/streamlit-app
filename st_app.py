@@ -45,13 +45,13 @@ st.set_page_config(page_title="Stories of Sex Workers", layout="wide")
 
 # Read in interview data 
 amber_dict = {}
-amber_dict = read_data("Stories-of-Sex-Workers-App-/data/Amber_Interview.txt", amber_dict)
+amber_dict = read_data("data/Amber_Interview.txt", amber_dict)
 
 essence_dict = {}
-essence_dict = read_data("Stories-of-Sex-Workers-App-/data/Essence_Interview.txt", essence_dict)
+essence_dict = read_data("data/Essence_Interview.txt", essence_dict)
 
 exotic_dict = {}
-exotic_dict = read_data("Stories-of-Sex-Workers-App-/data/Exotic_Interview.txt", exotic_dict)
+exotic_dict = read_data("data/Exotic_Interview.txt", exotic_dict)
 
 # Page Display
 st.sidebar.title("Interviewees")
@@ -66,18 +66,18 @@ if app_mode == "Main":
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Amber")
-        st.image("Stories-of-Sex-Workers-App-/data/Amber.png", use_column_width=True)
+        st.image("data/Amber.png", use_column_width=True)
     with col2:
         st.header("Essence")
-        st.image("Stories-of-Sex-Workers-App-/data/Essence.png", use_column_width=True)
+        st.image("data/Essence.png", use_column_width=True)
     with col3:
         st.header("Exotic")
-        st.image("Stories-of-Sex-Workers-App-/data/Exotic.png", use_column_width=True)
+        st.image("data/Exotic.png", use_column_width=True)
 
 # Interviewee specific pages displaying image, questions, and responses
 elif app_mode == "Amber":
-    interview_response("Amber", "Stories-of-Sex-Workers-App-/data/Amber.png", amber_dict)
+    interview_response("Amber", "data/Amber.png", amber_dict)
 elif app_mode == "Essence":
-    interview_response("Essence", "Stories-of-Sex-Workers-App-/data/Essence.png", essence_dict, True)
+    interview_response("Essence", "data/Essence.png", essence_dict, True)
 elif app_mode == "Exotic":
-    interview_response("Exotic", "Stories-of-Sex-Workers-App-/data/Exotic.png", exotic_dict)
+    interview_response("Exotic", "data/Exotic.png", exotic_dict)
