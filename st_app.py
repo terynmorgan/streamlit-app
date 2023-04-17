@@ -63,13 +63,13 @@ st.set_page_config(page_title="Stories of Sex Workers", layout="wide")
 
 # Read in interview data 
 amber_dict = {}
-amber_dict = read_data("data\Amber_Interview.txt", amber_dict)
+amber_dict = read_data("data/Amber_Interview.txt", amber_dict)
 
 essence_dict = {}
-essence_dict = read_data("data\Essence_Interview.txt", essence_dict)
+essence_dict = read_data("data/Essence_Interview.txt", essence_dict)
 
 exotic_dict = {}
-exotic_dict = read_data("data\Exotic_Interview.txt", exotic_dict)
+exotic_dict = read_data("data/Exotic_Interview.txt", exotic_dict)
 
 # Page Display
 st.sidebar.title("Interviewees")
